@@ -4,10 +4,9 @@ import logo from '../assets/images/logo.svg'
 const Navbar = () => {
   return (
     <div className='font-whitney-light w-full bg-transparent  flex justify-between py-7 px-6 font-bold items-center '>
-       
+       <img src={logo} alt='logo' className='w-32' />
         <div className=' flex pl-5 capitalize text-[#fff]  '>
-        <img src={logo} alt='logo' className='w-[12.4rem] mr-3' />
-        <div className='md:flex pl-6 hidden cursor-pointer space-x-12 items-center text-[1.6rem] font-bold'>
+        <div className='md:flex pl-6 hidden cursor-pointer space-x-9 items-center text-lg font-semibold'>
         <span className='hover:underline'>Download</span>
             <span className='hover:underline'>Nitro</span>
             <span className='hover:underline'>Discover</span>
@@ -17,7 +16,7 @@ const Navbar = () => {
             <span className='hover:underline'>Careers</span>
         </div>
         </div>
-        <button className='bg-[#fff] text-black hover:text-blue-600 text-[1.4rem] mr-6 px-[1.7rem] py-[.6rem] rounded-full hidden md:block'>login</button>
+        <button className='bg-[#fff] text-black hover:text-blue-600 text-sm mr-6 px-5 py-3 rounded-full hidden md:block'>login</button>
     </div>
   )
 }
