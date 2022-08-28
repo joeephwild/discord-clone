@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/logo.svg' 
+import { AiOutlineMenu } from "react-icons/ai"
 
 const Navbar = () => {
   return (
@@ -16,7 +17,10 @@ const Navbar = () => {
             <span className='hover:underline'>Careers</span>
         </div>
         </div>
-        <button className='bg-[#fff] text-black hover:text-blue-600 text-sm mr-6 px-5 py-3 rounded-full hidden md:block'>login</button>
+        <button className='bg-[#fff] text-black hover:text-blue-600 md:text-sm text-lg ml-6 md:mr-6 px-9 py-3 rounded-full hidden md:block'>login</button>
+        <div className='text-[#fff] font-black md:hidden block'>
+          <AiOutlineMenu size={28}/>
+        </div>
     </div>
   )
 }

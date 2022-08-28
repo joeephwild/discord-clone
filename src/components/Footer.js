@@ -3,18 +3,11 @@ import flag from '../assets/images/flag.png'
 
 const Footer = () => {
   return (
-    <div className='bg-[#23272a] grid border-b-2 border-blue-500 w-full h-[400px] justify-center items-center grid-cols-5 gap-11'>
-      <div className='flex flex-col px-10  pt-12 '>
-         <span className='text-[#ffff] font-Ginto-nord text-[30px]'>IMAGINE A PLACE</span>
-         <div>
-         <select className='bg-transparent border-none'>
-            <option>
-                <img src={flag} alt='' className='w-28' />
-                EngLish,USA
-            </option>
-         </select>
-         </div>
-         
+    <div className='bg-[#23272a] border-b-2 border-blue-500 text-[#fff] w-full h-[400px] justify-center items-center px-4 flex flex-col'>
+      <h1 className='text-[60px] text-blue-600 font-black font-Ginto-nord'>IMAGINE A PLACE</h1>
+      <div className='flex items-center space-x-4'>
+        <img src={flag} alt="" className='h-5 w-5'/>
+        English,USA
       </div>
     </div>
   )
